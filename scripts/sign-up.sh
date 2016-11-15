@@ -19,3 +19,17 @@ curl --include --request POST http://localhost:3000/sign-up \
       "password_confirmation": "an example password"
     }
   }'
+
+  curl --include --request POST http://localhost:4741/patients \
+    --header "Content-Type: application/json" \
+    --data '{
+      "patient": {
+        "name": "another@example.email",
+        "sickness": "an example password",
+        "age": "an example age"
+      }
+    }'
+
+    curl --include --request DELETE http://localhost:4741/patients \
+      --header "Content-Type: application/json" \
+      }'
