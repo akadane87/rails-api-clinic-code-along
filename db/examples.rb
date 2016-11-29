@@ -1,4 +1,4 @@
-# This file should contain all the record creation needed to experiment with
+This file should contain all the record creation needed to experiment with
 # your app during development.
 #
 # The data can then be loaded with the rake db:examples (or created alongside
@@ -16,3 +16,51 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
+
+Patient.create([
+                 { name: 'Jeff Horn',
+                   sickness: 'Too cool for school' },
+                 { name: 'Chris Payne',
+                   sickness: 'Way to excited' },
+                 { name: 'Brian Berzellini',
+                   sickness: 'Spooky Ghost' },
+                 { name: 'Antony Donovan',
+                   sickness: 'Robot Syndrome' },
+                 { name: 'Jason Weeks',
+                   sickness: 'Oddly large chest' }
+               ])
+
+# Doctor.create([
+#                 { given_name: 'Ben',
+#                   surname: 'Adamski',
+#                   specialty: 'VapeKing' },
+#                 { given_name: 'Rachel',
+#                   surname: 'Stevens',
+#                   specialty: 'Horse Enthusiast' },
+#                 { given_name: 'Julie',
+#                   surname: 'Carroll',
+#                   specialty: 'Getting everyone jobs' },
+#                 { given_name: 'Lu',
+#                   surname: 'Nathan',
+#                   specialty: 'iPhone guru' },
+#                 { given_name: 'Naida',
+#                   surname: 'the Pollster',
+#                   specialty: 'Keeping us all caffinated' }
+#               ])
+#
+# Patient.create([
+#                  { name: 'Jeff Horn',
+#                    sickness: 'Too cool for school',
+#                    doctor_id: 2 },
+#                  { name: 'Chris Payne',
+#                    sickness: 'Way to excited',
+#                    doctor_id: 2 },
+#                  { name: 'Brian Berzellini',
+#                    sickness: 'Spooky Ghost' },
+#                  { name: 'Antony Donovan',
+#                    sickness: 'Robot Syndrome',
+#                    doctor_id: 1 },
+#                  { name: 'Jason Weeks',
+#                    sickness: 'Oddly large chest',
+#                    doctor_id: 4 }
+#                ])
